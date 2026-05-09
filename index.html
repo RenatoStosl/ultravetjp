@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UltraVet JP — Diagnóstico por Imagem Veterinário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#">
+        <!-- Brand mark: dog silhouette + ultrasound waves — refined SVG -->
+        <img src="img/logo-ultravet.png" alt="UltraVet JP" class="class= nav__logo-icon" />
+        <span>UltraVet <strong>JP</strong></span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#convenios">Convênios</a>
+        <a href="#contato">Contato</a>
+
+        <a class="btn btn--primary nav__mobile-cta" href="https://api.whatsapp.com/send?phone=5583998715790" target="_blank" rel="noopener">
+          Agendar Consulta
+        </a>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="https://api.whatsapp.com/send?phone=5583998715790" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        Agendar Consulta
+      </a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__grid-lines" aria-hidden="true"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content" data-reveal>
+          <p class="hero__eyebrow">Diagnóstico por Imagem · João Pessoa, PB</p>
+          <h1 class="hero__title">
+            Precisão diagnóstica<br />
+            <em>ao serviço da vida</em><br />
+            do seu animal.
+          </h1>
+          <p class="hero__body">
+            Ultrassonografia, ecocardiograma e eletrocardiograma veterinário com
+            laudo emitido no mesmo atendimento. Tecnologia de referência,
+            atendimento especializado.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=5583998715790" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              Agendar pelo WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+
+        <aside class="hero__aside" data-reveal data-reveal-delay="200">
+          <div class="metric-card metric-card--featured">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3">
+              <path d="m381.89-408.89 36.96-119.31-98.59-75.43h120.31L480-728.37l38.43 124.74h121.31l-98.35 75.43 35.96 119.31L480-482.76l-98.11 73.87ZM241.37-34.5v-304.72q-46.44-47.95-66.89-105.63-20.46-57.67-20.46-116.35 0-138.39 93.8-232.18 93.79-93.79 232.18-93.79t232.3 93.79q93.92 93.79 93.92 232.18 0 58.68-20.58 116.35-20.57 57.68-67.01 105.63V-34.5L480-113.98 241.37-34.5Zm421.58-343.63q74.9-74.78 74.9-182.95 0-108.16-74.9-183.06-74.91-74.9-182.95-74.9-108.04 0-182.95 74.9-74.9 74.9-74.9 183.06 0 108.17 74.9 182.95 74.91 74.78 182.95 74.78 108.04 0 182.95-74.78ZM304-121.13l176-56.2 176 56.2V-289.5q-40.24 28.76-86.12 41.64Q524-234.98 480-234.98q-44 0-89.88-12.88-45.88-12.88-86.12-41.64v168.37Zm176-84.57Z" />
+            </svg>
+            <span class="metric-card__value">Excelência Comprovada</span>
+            <div class="metric-card__stars" aria-label="5 estrelas">
+            </div>
+          </div>
+
+          <div class="metric-row">
+            <div class="metric-card">
+              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3">
+                <path d="M586.75-296.12 442.12-440.75v-202.12h75.76v170.53L639.8-350.41l-53.05 54.29ZM442.12-725.55v-95.75h75.76v95.75h-75.76Zm283.43 283.43v-75.76h95.75v75.76h-95.75ZM442.12-138.7v-95.91h75.76v95.91h-75.76ZM138.7-442.12v-75.76h95.91v75.76H138.7ZM480.2-73.3q-84.44 0-158.48-31.96-74.03-31.96-129.27-87.19-55.23-55.24-87.19-129.3Q73.3-395.82 73.3-480.31q0-84.5 31.96-158.58 31.96-74.09 87.17-129t129.28-86.94q74.08-32.03 158.59-32.03t158.61 32.02q74.11 32.02 129 86.91 54.9 54.88 86.92 129.08 32.03 74.2 32.03 158.67 0 84.46-32.03 158.5-32.03 74.03-86.94 129.12t-129.08 87.17Q564.64-73.3 480.2-73.3Zm.13-75.76q138.05 0 234.33-96.51 96.28-96.52 96.28-234.76 0-138.05-96.16-234.33-96.15-96.28-234.86-96.28-137.79 0-234.33 96.16-96.53 96.15-96.53 234.86 0 137.79 96.51 234.33 96.52 96.53 234.76 96.53ZM480-480Z" />
+              </svg>
+              <span class="metric-card__value">Laudo Imediato</span>
+            </div>
+            <div class="metric-card">
+              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3">
+                <path d="M425.46-277.74h109.08v-147.72h147.72v-109.08H534.54v-147.72H425.46v147.72H277.74v109.08h147.72v147.72ZM189.06-113.3q-31 0-53.38-22.38-22.38-22.38-22.38-53.38v-581.88q0-31.06 22.38-53.49 22.38-22.43 53.38-22.43h581.88q31.06 0 53.49 22.43 22.43 22.43 22.43 53.49v581.88q0 31-22.43 53.38Q802-113.3 770.94-113.3H189.06Zm0-75.76h581.88v-581.88H189.06v581.88Zm0-581.88v581.88-581.88Z" />
+              </svg>
+              <span class="metric-card__value">Atendimento Volante</span>
+            </div>
+          </div>
+
+          <div class="hero__quote">
+            <svg class="hero__quote-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
+              <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
+            </svg>
+            <p>Melhor clínica veterinária de diagnóstico da cidade. Atendimento impecável e laudo imediato.</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="12" y1="5" x2="12" y2="19" />
+          <polyline points="19 12 12 19 5 12" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <p class="section__tag">Exames Disponíveis</p>
+          <h2 class="section__title">Diagnósticos com<br /><em>precisão e agilidade</em></h2>
+          <p class="section__sub">Laudo entregue no mesmo atendimento. Agendamento pelo WhatsApp, sem burocracia.</p>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="service-card" data-reveal>
+            <div class="service-card__icon">
+              <!-- Ultrasound wave icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12h1" />
+                <path d="M5 8.5a7 7 0 0 0 0 7" />
+                <path d="M9 7a5 5 0 0 0 0 10" />
+                <path d="M13 5.5a9 9 0 0 0 0 13" />
+                <path d="M17 4a11 11 0 0 0 0 16" />
+                <path d="M21 2.5a13 13 0 0 0 0 19" />
+              </svg>
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__name">Ultrassonografia</h3>
+              <p class="service-card__desc">Avaliação em tempo real dos órgãos internos com imagem de alta resolução. Indicada para rastreio abdominal, gestação, nódulos e alterações viscerais.</p>
+              <div class="service-card__footer">
+                <span class="service-card__price">R$ 100</span>
+                <span class="service-card__price-note">por exame</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal data-reveal-delay="100">
+            <div class="service-card__icon">
+              <!-- Heart pulse icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                <path d="M3.22 12H9.5l1.5-4 2 6 1.5-3h5.27" />
+              </svg>
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__name">Ecocardiograma</h3>
+              <p class="service-card__desc">Avaliação morfofuncional completa do coração. Identificação de sopros, alterações valvares, miocardiopatias e insuficiências cardíacas.</p>
+              <div class="service-card__footer">
+                <span class="service-card__price">R$ 150</span>
+                <span class="service-card__price-note">por exame</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal data-reveal-delay="200">
+            <div class="service-card__icon">
+              <!-- Activity/ECG icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__name">Eletrocardiograma</h3>
+              <p class="service-card__desc">Registro da atividade elétrica cardíaca para diagnóstico de arritmias, bloqueios de condução e alterações do ritmo em cães e gatos.</p>
+              <div class="service-card__footer">
+                <span class="service-card__price">R$ 80</span>
+                <span class="service-card__price-note">por exame</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card service-card--accent" data-reveal data-reveal-delay="300">
+            <div class="service-card__icon">
+              <!-- Scan icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+                <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+                <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+                <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+                <line x1="7" y1="12" x2="17" y2="12" />
+              </svg>
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__name">Raio-X Volante</h3>
+              <p class="service-card__desc">Serviço prestado em domicílio ou em clínicas parceiras. Estrutura móvel completa para atendimento especializado onde o paciente estiver.</p>
+              <div class="service-card__footer">
+                <span class="service-card__price">Sob consulta</span>
+                <span class="service-card__price-note">serviço volante</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="section section--dark" id="diferenciais">
+      <div class="container">
+        <div class="section__header section__header--light" data-reveal>
+          <p class="section__tag">Por que nos escolher</p>
+          <h2 class="section__title">Nossos<br /><em>diferenciais</em></h2>
+        </div>
+
+        <div class="diferenciais__grid">
+
+          <div class="diferencial" data-reveal>
+            <div class="diferencial__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="diferencial__title">Laudo no mesmo atendimento</h3>
+              <p class="diferencial__desc">Exames com hora marcada e resultado entregue ao final da consulta, sem espera.</p>
+            </div>
+          </div>
+
+          <div class="diferencial" data-reveal data-reveal-delay="80">
+            <div class="diferencial__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4l3 3" />
+                <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="diferencial__title">Serviço volante</h3>
+              <p class="diferencial__desc">Ultrassom e eletrocardiograma realizados em domicílio ou em clínicas parceiras.</p>
+            </div>
+          </div>
+
+          <div class="diferencial" data-reveal data-reveal-delay="160">
+            <div class="diferencial__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="diferencial__title">Estrutura exclusiva por espécie</h3>
+              <p class="diferencial__desc">Ambientes separados para cães e gatos, priorizando o conforto e o bem-estar de cada paciente.</p>
+            </div>
+          </div>
+
+          <div class="diferencial" data-reveal data-reveal-delay="240">
+            <div class="diferencial__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="5" width="20" height="14" rx="2" />
+                <line x1="2" y1="10" x2="22" y2="10" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="diferencial__title">Planos de saúde pet</h3>
+              <p class="diferencial__desc">Credenciados junto às principais operadoras: PlanVet, CARE e EuPet.</p>
+            </div>
+          </div>
+
+          <div class="diferencial" data-reveal data-reveal-delay="320">
+            <div class="diferencial__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="diferencial__title">Avaliação cardiológica especializada</h3>
+              <p class="diferencial__desc">Médicos veterinários com capacitação em cardiologia, ecocardiografia e eletrofisiologia.</p>
+            </div>
+          </div>
+
+          <div class="diferencial" data-reveal data-reveal-delay="400">
+            <div class="diferencial__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="diferencial__title">5,0 — 142 avaliações verificadas</h3>
+              <p class="diferencial__desc">Nota máxima no Google com centenas de tutores satisfeitos. A excelência reconhecida pelo mercado.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section class="section" id="avaliacoes">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <p class="section__tag">Avaliações</p>
+          <h2 class="section__title">A confiança dos tutores<br /><em>fala por nós</em></h2>
+        </div>
+
+        <div class="reviews__grid">
+
+          <blockquote class="review" data-reveal>
+            <div class="review__stars" aria-label="5 estrelas">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+            </div>
+            <p class="review__text">Da recepção à médica veterinária que fez o exame, tudo nota 10. Ambiente limpo, organizado, atendimento humanizado. Voltarei sempre.</p>
+            <footer class="review__author">Avaliação verificada no Google</footer>
+          </blockquote>
+
+          <blockquote class="review" data-reveal data-reveal-delay="120">
+            <div class="review__stars" aria-label="5 estrelas">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+            </div>
+            <p class="review__text">A clínica é impecável. Ambiente acolhedor e profissionais maravilhosos. O laudo foi entregue na hora e a explicação foi completa e clara.</p>
+            <footer class="review__author">Avaliação verificada no Google</footer>
+          </blockquote>
+
+          <blockquote class="review" data-reveal data-reveal-delay="240">
+            <div class="review__stars" aria-label="5 estrelas">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+              </svg>
+            </div>
+            <p class="review__text">Ótimo atendimento, veterinários super solícitos e atenciosos. Melhor clínica veterinária de diagnóstico de João Pessoa. Recomendo sem hesitação.</p>
+            <footer class="review__author">Avaliação verificada no Google</footer>
+          </blockquote>
+
+        </div>
+
+        <div class="reviews__cta" data-reveal>
+          <a class="reviews__google-link" href="https://www.google.com/search?q=ultravet+jp" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            Ver todas as 142 avaliações no Google
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONVÊNIOS -->
+    <section class="section section--muted" id="convenios">
+      <div class="container">
+        <div class="convenios__inner">
+          <div class="convenios__content" data-reveal>
+            <p class="section__tag">Convênios e Parcerias</p>
+            <h2 class="section__title">Aceitamos<br /><em>planos de saúde pet</em></h2>
+            <p class="convenios__body">Trabalhamos com as principais operadoras de saúde animal do mercado para facilitar o acesso ao diagnóstico de qualidade.</p>
+
+            <div class="convenios__list">
+              <div class="convenio-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                PlanVet
+              </div>
+              <div class="convenio-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                CARE
+              </div>
+              <div class="convenio-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                EuPet
+              </div>
+            </div>
+          </div>
+
+          <div class="volante-card" data-reveal data-reveal-delay="150">
+            <div class="volante-card__header">
+              <span class="volante-card__tag">Serviço Exclusivo</span>
+              <svg class="volante-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+              </svg>
+            </div>
+            <h3 class="volante-card__title">Atendimento Volante</h3>
+            <p class="volante-card__body">Levamos a estrutura de diagnóstico até o local mais conveniente para você e para o paciente — seja em domicílio ou em clínicas parceiras credenciadas.</p>
+            <a class="btn btn--outline-light" href="https://api.whatsapp.com/send?phone=5583998715790" target="_blank" rel="noopener">Consultar disponibilidade</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="contato__inner">
+
+          <div class="contato__info" data-reveal>
+            <p class="section__tag">Localização e Contato</p>
+            <h2 class="section__title">Onde<br /><em>nos encontrar</em></h2>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-item__label">Endereço</p>
+                  <p class="contact-item__value">Empresarial One Health<br />Av. Umbuzeiro, 1255 — Manaíra<br />João Pessoa — PB, 58038-180</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-item__label">WhatsApp</p>
+                  <a class="contact-item__value contact-item__link" href="https://api.whatsapp.com/send?phone=5583998715790" target="_blank" rel="noopener">(83) 99871-5790</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-item__label">Instagram</p>
+                  <a class="contact-item__value contact-item__link" href="https://www.instagram.com/ultravetjp/" target="_blank" rel="noopener">@ultravetjp</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="horario-card" data-reveal data-reveal-delay="150">
+            <h3 class="horario-card__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              Horário de Funcionamento
+            </h3>
+            <div class="horario-list">
+              <div class="horario-row">
+                <span class="horario-row__day">Segunda — Sexta</span>
+                <span class="horario-row__time">08h00 – 18h00</span>
+              </div>
+              <div class="horario-row">
+                <span class="horario-row__day">Sábado</span>
+                <span class="horario-row__time">08h00 – 12h00</span>
+              </div>
+              <div class="horario-row horario-row--closed">
+                <span class="horario-row__day">Domingo</span>
+                <span class="horario-row__time horario-row__time--closed">Fechado</span>
+              </div>
+            </div>
+            <a class="btn btn--primary btn--full" href="https://api.whatsapp.com/send?phone=5583998715790" target="_blank" rel="noopener" style="margin-top:2rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              Agendar Consulta
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-section">
+      <div class="container cta-section__inner" data-reveal>
+        <div>
+          <h2 class="cta-section__title">Agende o diagnóstico<br /><em>do seu animal hoje.</em></h2>
+          <p class="cta-section__sub">Atendimento com hora marcada, laudo no ato. Sem burocracia.</p>
+        </div>
+        <a class="btn btn--primary btn--lg" href="https://api.whatsapp.com/send?phone=5583998715790" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          Falar pelo WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">UltraVet <strong>JP</strong></p>
+        <p class="footer__tagline">Diagnóstico por Imagem Veterinário<br />João Pessoa — Paraíba</p>
+      </div>
+      <div class="footer__links">
+        <a href="#servicos">Serviços</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+        <a href="https://www.instagram.com/ultravetjp/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <p class="footer__copy">© 2026 UltraVet JP · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
