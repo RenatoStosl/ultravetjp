@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UltraVet JP — Diagnóstico por Imagem Veterinário</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -17,9 +18,10 @@
   <header class="nav" id="nav">
     <div class="nav__inner container">
       <a class="nav__logo" href="#">
-        <!-- Brand mark: dog silhouette + ultrasound waves — refined SVG -->
-        <img src="img/logo-ultravet.png" alt="UltraVet JP" class="class= nav__logo-icon" />
-        <span>UltraVet <strong>JP</strong></span>
+        <span class="nav__logo-mark">
+          <img src="img/ULTRAVETJP VETOR OFICIAL-03.png" alt="UltraVet JP" class="nav__logo-image nav__logo-image--white" />
+          <img src="img/ULTRAVETJP VETOR OFICIAL-06.png" alt="" aria-hidden="true" class="nav__logo-image nav__logo-image--color" />
+        </span>
       </a>
 
       <nav class="nav__links" id="nav-links" aria-label="Navegação principal">
@@ -52,6 +54,7 @@
     <!-- HERO -->
     <section class="hero" id="hero">
       <div class="hero__bg">
+        <img class="hero__photo" src="img/ultravet-frente.jpg" alt="" aria-hidden="true" />
         <div class="hero__grid-lines" aria-hidden="true"></div>
       </div>
       <div class="container hero__inner">
@@ -78,39 +81,6 @@
           </div>
         </div>
 
-        <aside class="hero__aside" data-reveal data-reveal-delay="200">
-          <div class="metric-card metric-card--featured">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3">
-              <path d="m381.89-408.89 36.96-119.31-98.59-75.43h120.31L480-728.37l38.43 124.74h121.31l-98.35 75.43 35.96 119.31L480-482.76l-98.11 73.87ZM241.37-34.5v-304.72q-46.44-47.95-66.89-105.63-20.46-57.67-20.46-116.35 0-138.39 93.8-232.18 93.79-93.79 232.18-93.79t232.3 93.79q93.92 93.79 93.92 232.18 0 58.68-20.58 116.35-20.57 57.68-67.01 105.63V-34.5L480-113.98 241.37-34.5Zm421.58-343.63q74.9-74.78 74.9-182.95 0-108.16-74.9-183.06-74.91-74.9-182.95-74.9-108.04 0-182.95 74.9-74.9 74.9-74.9 183.06 0 108.17 74.9 182.95 74.91 74.78 182.95 74.78 108.04 0 182.95-74.78ZM304-121.13l176-56.2 176 56.2V-289.5q-40.24 28.76-86.12 41.64Q524-234.98 480-234.98q-44 0-89.88-12.88-45.88-12.88-86.12-41.64v168.37Zm176-84.57Z" />
-            </svg>
-            <span class="metric-card__value">Excelência Comprovada</span>
-            <div class="metric-card__stars" aria-label="5 estrelas">
-            </div>
-          </div>
-
-          <div class="metric-row">
-            <div class="metric-card">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3">
-                <path d="M586.75-296.12 442.12-440.75v-202.12h75.76v170.53L639.8-350.41l-53.05 54.29ZM442.12-725.55v-95.75h75.76v95.75h-75.76Zm283.43 283.43v-75.76h95.75v75.76h-95.75ZM442.12-138.7v-95.91h75.76v95.91h-75.76ZM138.7-442.12v-75.76h95.91v75.76H138.7ZM480.2-73.3q-84.44 0-158.48-31.96-74.03-31.96-129.27-87.19-55.23-55.24-87.19-129.3Q73.3-395.82 73.3-480.31q0-84.5 31.96-158.58 31.96-74.09 87.17-129t129.28-86.94q74.08-32.03 158.59-32.03t158.61 32.02q74.11 32.02 129 86.91 54.9 54.88 86.92 129.08 32.03 74.2 32.03 158.67 0 84.46-32.03 158.5-32.03 74.03-86.94 129.12t-129.08 87.17Q564.64-73.3 480.2-73.3Zm.13-75.76q138.05 0 234.33-96.51 96.28-96.52 96.28-234.76 0-138.05-96.16-234.33-96.15-96.28-234.86-96.28-137.79 0-234.33 96.16-96.53 96.15-96.53 234.86 0 137.79 96.51 234.33 96.52 96.53 234.76 96.53ZM480-480Z" />
-              </svg>
-              <span class="metric-card__value">Laudo Imediato</span>
-            </div>
-            <div class="metric-card">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3">
-                <path d="M425.46-277.74h109.08v-147.72h147.72v-109.08H534.54v-147.72H425.46v147.72H277.74v109.08h147.72v147.72ZM189.06-113.3q-31 0-53.38-22.38-22.38-22.38-22.38-53.38v-581.88q0-31.06 22.38-53.49 22.38-22.43 53.38-22.43h581.88q31.06 0 53.49 22.43 22.43 22.43 22.43 53.49v581.88q0 31-22.43 53.38Q802-113.3 770.94-113.3H189.06Zm0-75.76h581.88v-581.88H189.06v581.88Zm0-581.88v581.88-581.88Z" />
-              </svg>
-              <span class="metric-card__value">Atendimento Volante</span>
-            </div>
-          </div>
-
-          <div class="hero__quote">
-            <svg class="hero__quote-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
-              <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
-            </svg>
-            <p>Melhor clínica veterinária de diagnóstico da cidade. Atendimento impecável e laudo imediato.</p>
-          </div>
-        </aside>
       </div>
 
       <div class="hero__scroll" aria-hidden="true">
