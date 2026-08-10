@@ -348,6 +348,21 @@ button {
   transition: color 0.2s ease;
 }
 
+.nav__links .nav__exams-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--accent-light);
+}
+
+.nav.is-scrolled .nav__links .nav__exams-link {
+  color: var(--accent);
+}
+
+.nav__exams-link svg {
+  flex-shrink: 0;
+}
+
 .nav__cta {
   margin-left: 1.5rem;
 }
@@ -1215,6 +1230,46 @@ button {
 }
 
 /* ─── RESPONSIVE ─── */
+@media (max-width: 1120px) {
+  .nav__links,
+  .nav__cta {
+    display: none;
+  }
+  .nav__hamburger {
+    display: flex;
+  }
+  .nav__links.is-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 82px;
+    left: 0;
+    right: 0;
+    background: var(--ivory);
+    padding: 2rem;
+    gap: 1.5rem;
+    box-shadow: var(--shadow-lg);
+    border-top: 1px solid var(--border);
+    z-index: 199;
+    text-align: center;
+  }
+  .nav__links.is-open a {
+    color: var(--forest-deep) !important;
+  }
+  .nav__links.is-open .nav__exams-link {
+    color: var(--accent) !important;
+  }
+  .nav__links.is-open .nav__mobile-cta {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    background: var(--forest-deep);
+    color: var(--white) !important;
+    border: none;
+  }
+}
+
 @media (max-width: 960px) {
   .review {
     flex-basis: calc((100% - 1.25rem) / 2);
